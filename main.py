@@ -1,1 +1,2 @@
-print(1 + 1 * 1234)
+var = 1 + 1 + 1
+print("The answer is ", str(var))
