@@ -1,5 +1,72 @@
-#Class #3
 done = "\nDone with Program. Proceeding to Next Program.\n\n\n"
+#Class #4
+
+
+
+
+number = int(input("Enter a number: "))
+prime = "The number is prime."
+for x in range(2, number):
+  if number % x == 0:
+    prime = "The number is composite."
+    break
+print(prime)
+print(done)
+
+
+
+number = int(input("Enter a number: "))
+number1 = 0
+number2 = 1
+if number <= 0:
+  print("Invalid Input.")
+elif number == 1:
+  print(number1)
+else:
+  print(number1)
+  print(number2)
+  for x in range(number - 2):
+    print(number1 + number2)
+    number2 += number1
+    number1 = number2 - number1
+print(done)
+
+
+
+number = int(input("Enter a number: "))
+for x in range(1, number + 1):
+  if x % 2 != 0 and x % 3 != 0:
+    print(x)
+print(done)
+
+
+
+while True:
+  number = int(input("Enter a number for Fizz Buzz! (Or type 0 for quit): "))
+  if number == 0:
+    break
+  if number % 15 == 0:
+    print("Fizz Buzz!")
+  elif number % 5 == 0:
+    print("Buzz!")
+  elif number % 3 == 0:
+    print("Fizz!")
+  else:
+    print("Oops!")
+print(done)
+
+
+
+factorial_number = int(input("Enter a number: "))
+factorial = 1
+for d in range(2, factorial_number + 1):
+  factorial *= d
+print(f"The factorial of {factorial_number} is {factorial}")
+print(done)
+
+
+
+#Class #3
 b = "nothing"
 c = "nothing"
 while not(b == "quit"):
